@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Almond Mocca';
+    src: url('assets/fonts/Almond\ Mocca.woff2') format('woff2');
+}
+
+/* Using custom Almond Mocca font*/
+p {
+    font-family: 'Almond Mocca';
+}
