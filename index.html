@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Sign-up Form</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <main id="container">
@@ -25,7 +26,7 @@
                 <p>You <em>know</em> you want to.</p>
             </div>
             
-            <form action="">
+            <form action="/" method="POST" id="create-acc">
                 <legend>Let's do this!</legend>
 
                 <section>
@@ -55,24 +56,22 @@
                 <section>
                     <div>
                         <label for="password">Password</label>
-                        <input type="password" id="password" name="password">
+                        <input type="password" id="password" name="password" minlength="8">
                     </div>
                     
                     <div>
                         <label for="confirm_pw">Confirm Password</label>
-                        <input type="password" id="confirm_pw" name="confirm_pw">
+                        <input type="password" id="confirm_pw" name="confirm_pw" minlength="8">
                     </div>
                 </section>
                 
             </form>
             
-            
             <div>
                 <div>
-                    <button type="submit">Create Account</button>
+                    <button form="create-acc" type="submit">Create Account</button>
                 </div>
-                
-                <p>Already have an account? <span>Log in</span></p>
+                <p>Already have an account? <a href="">Log in</a></p>
             </div>
         </div>
     </main>
