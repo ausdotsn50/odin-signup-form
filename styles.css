@@ -2,6 +2,7 @@
     --grn-btn: #596D48;
     --input-border: #E5E7EB;
     --invalid-clr: red;
+    --soft-shadow: rgb(70, 70, 70);
 }
 
 @font-face {
@@ -164,4 +165,19 @@ a {
 
 button:hover {
     opacity: 80%;
+}
+
+footer {
+    padding: 5px;
+    background-color: #F9FAFB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-align: center;
+} 
+
+#footer-icon {
+    width: 16px; 
+    height: 16px;
 }
